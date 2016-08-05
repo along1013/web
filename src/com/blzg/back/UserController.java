@@ -1,4 +1,4 @@
-package com.blzg.user;
+package com.blzg.back;
 
 import com.demo.common.model.UserInfo;
 import com.jfinal.core.Controller;
@@ -8,6 +8,7 @@ import com.jfinal.core.Controller;
  * 所有 sql 与业务逻辑写在 Model 或 Service 中，不要写在 Controller 中，养成好习惯，有利于大型项目的开发与维护
  */
 public class UserController extends Controller {
+	
 	public void index() {
 		setAttr("userList", UserInfo.me.paginate(getParaToInt("pageNo", 1), 10));
 //		render("blog.html");
@@ -15,6 +16,7 @@ public class UserController extends Controller {
 	}
 	
 	public void add() {
+		
 	}
 	
 	public void save() {

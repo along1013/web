@@ -1,6 +1,6 @@
 package com.demo.common.config;
 
-import com.blzg.user.UserController;
+import com.blzg.back.UserController;
 import com.demo.blog.BlogController;
 import com.demo.common.model._MappingKit;
 import com.demo.index.IndexController;
@@ -33,7 +33,7 @@ public class WebConfig extends JFinalConfig {
 	 * 配置路由
 	 */
 	public void configRoute(Routes me) {
-		me.add("/", IndexController.class, "/index");	// 第三个参数为该Controller的视图存放路径
+		me.add("/checkState", IndexController.class);	// 第三个参数为该Controller的视图存放路径
 		me.add("/blog", BlogController.class);			// 第三个参数省略时默认与第一个参数值相同，在此即为 "/blog"
 		me.add("/user",UserController.class);
 	}
