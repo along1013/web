@@ -2,3 +2,8 @@ jdbcUrl = jdbc:mysql://121.43.58.238/wechat?characterEncoding=utf8&zeroDateTimeB
 user = yaoyunlong
 password = 873c9534cd7b2c44fa
 devMode = true
+
+
+###back set ########
+userName = bailu
+passWord = bailu123

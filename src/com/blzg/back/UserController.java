@@ -11,8 +11,9 @@ public class UserController extends Controller {
 	
 	public void index() {
 		setAttr("userList", UserInfo.me.paginate(getParaToInt("pageNo", 1), 10));
+		System.out.println(getAttr("userList"));
 //		render("blog.html");
-		renderJson();
+		render("userList.html");
 	}
 	
 	public void add() {

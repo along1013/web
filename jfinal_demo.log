@@ -284,3 +284,1075 @@ The failing instruction (print stack trace for 3 more):
 	at freemarker.template.Template.process(Template.java:277)
 	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:145)
 	... 25 more
+
+2016-08-06 21:01:17
+[WARN]-[Thread: qtp6395644-20]-[com.jfinal.core.ActionHandler.handle()]: 404 Action Not Found: /index
+
+2016-08-06 21:01:27
+[WARN]-[Thread: qtp6395644-20]-[com.jfinal.core.ActionHandler.handle()]: 404 Action Not Found: /web/
+
+2016-08-06 21:01:44
+[WARN]-[Thread: qtp6395644-18]-[com.jfinal.core.ActionHandler.handle()]: 404 Action Not Found: /web/login_back
+
+2016-08-06 21:02:38
+[WARN]-[Thread: qtp6395644-21]-[com.jfinal.core.ActionHandler.handle()]: 404 Action Not Found: /web/login_back/index
+
+2016-08-06 21:26:05
+[ERROR]-[Thread: qtp6395644-16]-[com.jfinal.core.ActionHandler.handle()]: /login_back/login
+com.jfinal.render.RenderException: java.io.FileNotFoundException: Template "/back/login.html" not found.
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:147)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:97)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:937)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:998)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:856)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: java.io.FileNotFoundException: Template "/back/login.html" not found.
+	at freemarker.template.Configuration.getTemplate(Configuration.java:742)
+	at freemarker.template.Configuration.getTemplate(Configuration.java:665)
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:143)
+	... 25 more
+
+2016-08-06 21:29:53
+[ERROR]-[Thread: qtp6395644-19]-[com.jfinal.core.ActionHandler.handle()]: /login_back/login
+com.jfinal.render.RenderException: java.io.FileNotFoundException: Template "/back/home.html" not found.
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:147)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:97)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:937)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:998)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:856)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: java.io.FileNotFoundException: Template "/back/home.html" not found.
+	at freemarker.template.Configuration.getTemplate(Configuration.java:742)
+	at freemarker.template.Configuration.getTemplate(Configuration.java:665)
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:143)
+	... 25 more
+
+2016-08-07 11:13:45
+[ERROR]-[Thread: qtp16757505-15]-[com.jfinal.core.ActionHandler.handle()]: /login_back/login
+java.lang.NullPointerException
+	at com.blzg.back.LoginBackController.login(LoginBackController.java:21)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:73)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:74)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:926)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:988)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:635)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:722)
+
+2016-08-07 11:13:54
+[ERROR]-[Thread: qtp16757505-20]-[com.jfinal.core.ActionHandler.handle()]: /login_back/login
+java.lang.NullPointerException
+	at com.blzg.back.LoginBackController.login(LoginBackController.java:21)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:73)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:74)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:926)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:988)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:635)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:722)
+
+2016-08-07 11:24:29
+[ERROR]-[Thread: qtp5893698-20]-[freemarker.log._Log4JLoggerFactory$Log4JLogger.error()]: Error executing FreeMarker template
+FreeMarker template error:
+Error reading included file "back/left.html1":
+Template "back/left.html1" not found.
+
+The failing instruction (FTL stack trace):
+----------
+==> #include "left.html1"  [in template "back/home.html" at line 57, column 17]
+----------
+
+Java stack trace (for programmers):
+----------
+freemarker.core._MiscTemplateException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.Include.accept(Include.java:168)
+	at freemarker.core.Environment.visit(Environment.java:265)
+	at freemarker.core.MixedContent.accept(MixedContent.java:93)
+	at freemarker.core.Environment.visit(Environment.java:265)
+	at freemarker.core.Environment.process(Environment.java:243)
+	at freemarker.template.Template.process(Template.java:277)
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:145)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:97)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:937)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:998)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:856)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: java.io.FileNotFoundException: Template "back/left.html1" not found.
+	at freemarker.template.Configuration.getTemplate(Configuration.java:742)
+	at freemarker.core.Environment.getTemplateForInclusion(Environment.java:1694)
+	at freemarker.core.Include.accept(Include.java:159)
+	... 31 more
+
+2016-08-07 11:24:29
+[ERROR]-[Thread: qtp5893698-20]-[com.jfinal.core.ActionHandler.handle()]: /login_back/login
+com.jfinal.render.RenderException: freemarker.core._MiscTemplateException: Error reading included file "back/left.html1":
+Template "back/left.html1" not found.
+
+The failing instruction:
+==> #include "left.html1"  [in template "back/home.html" at line 57, column 17]
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:147)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:97)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:937)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:998)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:856)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: freemarker.core._MiscTemplateException: Error reading included file "back/left.html1":
+Template "back/left.html1" not found.
+
+The failing instruction:
+==> #include "left.html1"  [in template "back/home.html" at line 57, column 17]
+	at freemarker.core.Include.accept(Include.java:168)
+	at freemarker.core.Environment.visit(Environment.java:265)
+	at freemarker.core.MixedContent.accept(MixedContent.java:93)
+	at freemarker.core.Environment.visit(Environment.java:265)
+	at freemarker.core.Environment.process(Environment.java:243)
+	at freemarker.template.Template.process(Template.java:277)
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:145)
+	... 25 more
+Caused by: java.io.FileNotFoundException: Template "back/left.html1" not found.
+	at freemarker.template.Configuration.getTemplate(Configuration.java:742)
+	at freemarker.core.Environment.getTemplateForInclusion(Environment.java:1694)
+	at freemarker.core.Include.accept(Include.java:159)
+	... 31 more
+
+2016-08-07 11:51:45
+[ERROR]-[Thread: qtp5893698-25]-[freemarker.log._Log4JLoggerFactory$Log4JLogger.error()]: Error executing FreeMarker template
+FreeMarker template error:
+For "#list" list source: Expected a collection or sequence, but this evaluated to an extended_hash+string (com.jfinal.plugin.activerecord.Page wrapped into f.e.b.StringModel):
+==> userList  [in template "back/userList.html" at line 74, column 22]
+
+The failing instruction (FTL stack trace):
+----------
+==> #list userList as user  [in template "back/userList.html" at line 74, column 15]
+----------
+
+Java stack trace (for programmers):
+----------
+freemarker.core.UnexpectedTypeException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.IteratorBlock$Context.runLoop(IteratorBlock.java:204)
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:509)
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:103)
+	at freemarker.core.Environment.visit(Environment.java:265)
+	at freemarker.core.MixedContent.accept(MixedContent.java:93)
+	at freemarker.core.Environment.visit(Environment.java:265)
+	at freemarker.core.Environment.process(Environment.java:243)
+	at freemarker.template.Template.process(Template.java:277)
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:145)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:97)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:926)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:988)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:635)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:722)
+
+2016-08-07 11:51:45
+[ERROR]-[Thread: qtp5893698-25]-[com.jfinal.core.ActionHandler.handle()]: /user_back
+com.jfinal.render.RenderException: freemarker.core.UnexpectedTypeException: For "#list" list source: Expected a collection or sequence, but this evaluated to an extended_hash+string (com.jfinal.plugin.activerecord.Page wrapped into f.e.b.StringModel):
+==> userList  [in template "back/userList.html" at line 74, column 22]
+
+The failing instruction:
+==> #list userList as user  [in template "back/userList.html" at line 74, column 15]
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:147)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:97)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:926)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:988)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:635)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: freemarker.core.UnexpectedTypeException: For "#list" list source: Expected a collection or sequence, but this evaluated to an extended_hash+string (com.jfinal.plugin.activerecord.Page wrapped into f.e.b.StringModel):
+==> userList  [in template "back/userList.html" at line 74, column 22]
+
+The failing instruction:
+==> #list userList as user  [in template "back/userList.html" at line 74, column 15]
+	at freemarker.core.IteratorBlock$Context.runLoop(IteratorBlock.java:204)
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:509)
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:103)
+	at freemarker.core.Environment.visit(Environment.java:265)
+	at freemarker.core.MixedContent.accept(MixedContent.java:93)
+	at freemarker.core.Environment.visit(Environment.java:265)
+	at freemarker.core.Environment.process(Environment.java:243)
+	at freemarker.template.Template.process(Template.java:277)
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:145)
+	... 25 more
+
+2016-08-07 11:51:51
+[ERROR]-[Thread: qtp5893698-23]-[freemarker.log._Log4JLoggerFactory$Log4JLogger.error()]: Error executing FreeMarker template
+FreeMarker template error:
+For "#list" list source: Expected a collection or sequence, but this evaluated to an extended_hash+string (com.jfinal.plugin.activerecord.Page wrapped into f.e.b.StringModel):
+==> userList  [in template "back/userList.html" at line 74, column 22]
+
+The failing instruction (FTL stack trace):
+----------
+==> #list userList as user  [in template "back/userList.html" at line 74, column 15]
+----------
+
+Java stack trace (for programmers):
+----------
+freemarker.core.UnexpectedTypeException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.IteratorBlock$Context.runLoop(IteratorBlock.java:204)
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:509)
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:103)
+	at freemarker.core.Environment.visit(Environment.java:265)
+	at freemarker.core.MixedContent.accept(MixedContent.java:93)
+	at freemarker.core.Environment.visit(Environment.java:265)
+	at freemarker.core.Environment.process(Environment.java:243)
+	at freemarker.template.Template.process(Template.java:277)
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:145)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:97)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:926)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:988)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:635)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:722)
+
+2016-08-07 11:51:51
+[ERROR]-[Thread: qtp5893698-23]-[com.jfinal.core.ActionHandler.handle()]: /user_back
+com.jfinal.render.RenderException: freemarker.core.UnexpectedTypeException: For "#list" list source: Expected a collection or sequence, but this evaluated to an extended_hash+string (com.jfinal.plugin.activerecord.Page wrapped into f.e.b.StringModel):
+==> userList  [in template "back/userList.html" at line 74, column 22]
+
+The failing instruction:
+==> #list userList as user  [in template "back/userList.html" at line 74, column 15]
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:147)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:97)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:926)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:988)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:635)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: freemarker.core.UnexpectedTypeException: For "#list" list source: Expected a collection or sequence, but this evaluated to an extended_hash+string (com.jfinal.plugin.activerecord.Page wrapped into f.e.b.StringModel):
+==> userList  [in template "back/userList.html" at line 74, column 22]
+
+The failing instruction:
+==> #list userList as user  [in template "back/userList.html" at line 74, column 15]
+	at freemarker.core.IteratorBlock$Context.runLoop(IteratorBlock.java:204)
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:509)
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:103)
+	at freemarker.core.Environment.visit(Environment.java:265)
+	at freemarker.core.MixedContent.accept(MixedContent.java:93)
+	at freemarker.core.Environment.visit(Environment.java:265)
+	at freemarker.core.Environment.process(Environment.java:243)
+	at freemarker.template.Template.process(Template.java:277)
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:145)
+	... 25 more
+
+2016-08-07 11:51:52
+[ERROR]-[Thread: qtp5893698-24]-[freemarker.log._Log4JLoggerFactory$Log4JLogger.error()]: Error executing FreeMarker template
+FreeMarker template error:
+For "#list" list source: Expected a collection or sequence, but this evaluated to an extended_hash+string (com.jfinal.plugin.activerecord.Page wrapped into f.e.b.StringModel):
+==> userList  [in template "back/userList.html" at line 74, column 22]
+
+The failing instruction (FTL stack trace):
+----------
+==> #list userList as user  [in template "back/userList.html" at line 74, column 15]
+----------
+
+Java stack trace (for programmers):
+----------
+freemarker.core.UnexpectedTypeException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.IteratorBlock$Context.runLoop(IteratorBlock.java:204)
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:509)
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:103)
+	at freemarker.core.Environment.visit(Environment.java:265)
+	at freemarker.core.MixedContent.accept(MixedContent.java:93)
+	at freemarker.core.Environment.visit(Environment.java:265)
+	at freemarker.core.Environment.process(Environment.java:243)
+	at freemarker.template.Template.process(Template.java:277)
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:145)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:97)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:926)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:988)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:635)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:722)
+
+2016-08-07 11:51:52
+[ERROR]-[Thread: qtp5893698-24]-[com.jfinal.core.ActionHandler.handle()]: /user_back
+com.jfinal.render.RenderException: freemarker.core.UnexpectedTypeException: For "#list" list source: Expected a collection or sequence, but this evaluated to an extended_hash+string (com.jfinal.plugin.activerecord.Page wrapped into f.e.b.StringModel):
+==> userList  [in template "back/userList.html" at line 74, column 22]
+
+The failing instruction:
+==> #list userList as user  [in template "back/userList.html" at line 74, column 15]
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:147)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:97)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:926)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:988)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:635)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: freemarker.core.UnexpectedTypeException: For "#list" list source: Expected a collection or sequence, but this evaluated to an extended_hash+string (com.jfinal.plugin.activerecord.Page wrapped into f.e.b.StringModel):
+==> userList  [in template "back/userList.html" at line 74, column 22]
+
+The failing instruction:
+==> #list userList as user  [in template "back/userList.html" at line 74, column 15]
+	at freemarker.core.IteratorBlock$Context.runLoop(IteratorBlock.java:204)
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:509)
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:103)
+	at freemarker.core.Environment.visit(Environment.java:265)
+	at freemarker.core.MixedContent.accept(MixedContent.java:93)
+	at freemarker.core.Environment.visit(Environment.java:265)
+	at freemarker.core.Environment.process(Environment.java:243)
+	at freemarker.template.Template.process(Template.java:277)
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:145)
+	... 25 more
+
+2016-08-07 11:52:27
+[ERROR]-[Thread: qtp5893698-24]-[freemarker.log._Log4JLoggerFactory$Log4JLogger.error()]: Error executing FreeMarker template
+FreeMarker template error:
+For "#list" list source: Expected a collection or sequence, but this evaluated to an extended_hash+string (com.jfinal.plugin.activerecord.Page wrapped into f.e.b.StringModel):
+==> userList  [in template "back/userList.html" at line 74, column 22]
+
+The failing instruction (FTL stack trace):
+----------
+==> #list userList as user  [in template "back/userList.html" at line 74, column 15]
+----------
+
+Java stack trace (for programmers):
+----------
+freemarker.core.UnexpectedTypeException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.IteratorBlock$Context.runLoop(IteratorBlock.java:204)
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:509)
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:103)
+	at freemarker.core.Environment.visit(Environment.java:265)
+	at freemarker.core.MixedContent.accept(MixedContent.java:93)
+	at freemarker.core.Environment.visit(Environment.java:265)
+	at freemarker.core.Environment.process(Environment.java:243)
+	at freemarker.template.Template.process(Template.java:277)
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:145)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:97)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:926)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:988)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:635)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:722)
+
+2016-08-07 11:52:27
+[ERROR]-[Thread: qtp5893698-24]-[com.jfinal.core.ActionHandler.handle()]: /user_back
+com.jfinal.render.RenderException: freemarker.core.UnexpectedTypeException: For "#list" list source: Expected a collection or sequence, but this evaluated to an extended_hash+string (com.jfinal.plugin.activerecord.Page wrapped into f.e.b.StringModel):
+==> userList  [in template "back/userList.html" at line 74, column 22]
+
+The failing instruction:
+==> #list userList as user  [in template "back/userList.html" at line 74, column 15]
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:147)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:97)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:926)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:988)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:635)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: freemarker.core.UnexpectedTypeException: For "#list" list source: Expected a collection or sequence, but this evaluated to an extended_hash+string (com.jfinal.plugin.activerecord.Page wrapped into f.e.b.StringModel):
+==> userList  [in template "back/userList.html" at line 74, column 22]
+
+The failing instruction:
+==> #list userList as user  [in template "back/userList.html" at line 74, column 15]
+	at freemarker.core.IteratorBlock$Context.runLoop(IteratorBlock.java:204)
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:509)
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:103)
+	at freemarker.core.Environment.visit(Environment.java:265)
+	at freemarker.core.MixedContent.accept(MixedContent.java:93)
+	at freemarker.core.Environment.visit(Environment.java:265)
+	at freemarker.core.Environment.process(Environment.java:243)
+	at freemarker.template.Template.process(Template.java:277)
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:145)
+	... 25 more
+
+2016-08-07 11:56:40
+[ERROR]-[Thread: qtp5893698-24]-[freemarker.log._Log4JLoggerFactory$Log4JLogger.error()]: Error executing FreeMarker template
+FreeMarker template error:
+For "#list" list source: Expected a collection or sequence, but this evaluated to an extended_hash+string (com.jfinal.plugin.activerecord.Page wrapped into f.e.b.StringModel):
+==> userList  [in template "back/userList.html" at line 74, column 22]
+
+The failing instruction (FTL stack trace):
+----------
+==> #list userList as user  [in template "back/userList.html" at line 74, column 15]
+----------
+
+Java stack trace (for programmers):
+----------
+freemarker.core.UnexpectedTypeException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.IteratorBlock$Context.runLoop(IteratorBlock.java:204)
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:509)
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:103)
+	at freemarker.core.Environment.visit(Environment.java:265)
+	at freemarker.core.MixedContent.accept(MixedContent.java:93)
+	at freemarker.core.Environment.visit(Environment.java:265)
+	at freemarker.core.Environment.process(Environment.java:243)
+	at freemarker.template.Template.process(Template.java:277)
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:145)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:97)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:926)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:988)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:635)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:722)
+
+2016-08-07 11:56:40
+[ERROR]-[Thread: qtp5893698-24]-[com.jfinal.core.ActionHandler.handle()]: /user_back
+com.jfinal.render.RenderException: freemarker.core.UnexpectedTypeException: For "#list" list source: Expected a collection or sequence, but this evaluated to an extended_hash+string (com.jfinal.plugin.activerecord.Page wrapped into f.e.b.StringModel):
+==> userList  [in template "back/userList.html" at line 74, column 22]
+
+The failing instruction:
+==> #list userList as user  [in template "back/userList.html" at line 74, column 15]
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:147)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:97)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:926)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:988)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:635)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: freemarker.core.UnexpectedTypeException: For "#list" list source: Expected a collection or sequence, but this evaluated to an extended_hash+string (com.jfinal.plugin.activerecord.Page wrapped into f.e.b.StringModel):
+==> userList  [in template "back/userList.html" at line 74, column 22]
+
+The failing instruction:
+==> #list userList as user  [in template "back/userList.html" at line 74, column 15]
+	at freemarker.core.IteratorBlock$Context.runLoop(IteratorBlock.java:204)
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:509)
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:103)
+	at freemarker.core.Environment.visit(Environment.java:265)
+	at freemarker.core.MixedContent.accept(MixedContent.java:93)
+	at freemarker.core.Environment.visit(Environment.java:265)
+	at freemarker.core.Environment.process(Environment.java:243)
+	at freemarker.template.Template.process(Template.java:277)
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:145)
+	... 25 more
+
+2016-08-07 11:58:32
+[ERROR]-[Thread: qtp5893698-25]-[freemarker.log._Log4JLoggerFactory$Log4JLogger.error()]: Error executing FreeMarker template
+FreeMarker template error:
+For "#list" list source: Expected a collection or sequence, but this evaluated to an extended_hash+string (com.jfinal.plugin.activerecord.Page wrapped into f.e.b.StringModel):
+==> userList  [in template "back/userList.html" at line 74, column 22]
+
+The failing instruction (FTL stack trace):
+----------
+==> #list userList as UserInfo  [in template "back/userList.html" at line 74, column 15]
+----------
+
+Java stack trace (for programmers):
+----------
+freemarker.core.UnexpectedTypeException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.IteratorBlock$Context.runLoop(IteratorBlock.java:204)
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:509)
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:103)
+	at freemarker.core.Environment.visit(Environment.java:265)
+	at freemarker.core.MixedContent.accept(MixedContent.java:93)
+	at freemarker.core.Environment.visit(Environment.java:265)
+	at freemarker.core.Environment.process(Environment.java:243)
+	at freemarker.template.Template.process(Template.java:277)
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:145)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:97)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:926)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:988)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:635)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:722)
+
+2016-08-07 11:58:32
+[ERROR]-[Thread: qtp5893698-25]-[com.jfinal.core.ActionHandler.handle()]: /user_back
+com.jfinal.render.RenderException: freemarker.core.UnexpectedTypeException: For "#list" list source: Expected a collection or sequence, but this evaluated to an extended_hash+string (com.jfinal.plugin.activerecord.Page wrapped into f.e.b.StringModel):
+==> userList  [in template "back/userList.html" at line 74, column 22]
+
+The failing instruction:
+==> #list userList as UserInfo  [in template "back/userList.html" at line 74, column 15]
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:147)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:97)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:926)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:988)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:635)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: freemarker.core.UnexpectedTypeException: For "#list" list source: Expected a collection or sequence, but this evaluated to an extended_hash+string (com.jfinal.plugin.activerecord.Page wrapped into f.e.b.StringModel):
+==> userList  [in template "back/userList.html" at line 74, column 22]
+
+The failing instruction:
+==> #list userList as UserInfo  [in template "back/userList.html" at line 74, column 15]
+	at freemarker.core.IteratorBlock$Context.runLoop(IteratorBlock.java:204)
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:509)
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:103)
+	at freemarker.core.Environment.visit(Environment.java:265)
+	at freemarker.core.MixedContent.accept(MixedContent.java:93)
+	at freemarker.core.Environment.visit(Environment.java:265)
+	at freemarker.core.Environment.process(Environment.java:243)
+	at freemarker.template.Template.process(Template.java:277)
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:145)
+	... 25 more
+
+2016-08-07 11:58:39
+[ERROR]-[Thread: qtp5893698-24]-[freemarker.log._Log4JLoggerFactory$Log4JLogger.error()]: Error executing FreeMarker template
+FreeMarker template error:
+For "#list" list source: Expected a collection or sequence, but this evaluated to an extended_hash+string (com.jfinal.plugin.activerecord.Page wrapped into f.e.b.StringModel):
+==> userList  [in template "back/userList.html" at line 74, column 22]
+
+The failing instruction (FTL stack trace):
+----------
+==> #list userList as UserInfo  [in template "back/userList.html" at line 74, column 15]
+----------
+
+Java stack trace (for programmers):
+----------
+freemarker.core.UnexpectedTypeException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.IteratorBlock$Context.runLoop(IteratorBlock.java:204)
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:509)
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:103)
+	at freemarker.core.Environment.visit(Environment.java:265)
+	at freemarker.core.MixedContent.accept(MixedContent.java:93)
+	at freemarker.core.Environment.visit(Environment.java:265)
+	at freemarker.core.Environment.process(Environment.java:243)
+	at freemarker.template.Template.process(Template.java:277)
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:145)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:97)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:926)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:988)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:635)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:722)
+
+2016-08-07 11:58:39
+[ERROR]-[Thread: qtp5893698-24]-[com.jfinal.core.ActionHandler.handle()]: /user_back
+com.jfinal.render.RenderException: freemarker.core.UnexpectedTypeException: For "#list" list source: Expected a collection or sequence, but this evaluated to an extended_hash+string (com.jfinal.plugin.activerecord.Page wrapped into f.e.b.StringModel):
+==> userList  [in template "back/userList.html" at line 74, column 22]
+
+The failing instruction:
+==> #list userList as UserInfo  [in template "back/userList.html" at line 74, column 15]
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:147)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:97)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:926)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:988)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:635)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: freemarker.core.UnexpectedTypeException: For "#list" list source: Expected a collection or sequence, but this evaluated to an extended_hash+string (com.jfinal.plugin.activerecord.Page wrapped into f.e.b.StringModel):
+==> userList  [in template "back/userList.html" at line 74, column 22]
+
+The failing instruction:
+==> #list userList as UserInfo  [in template "back/userList.html" at line 74, column 15]
+	at freemarker.core.IteratorBlock$Context.runLoop(IteratorBlock.java:204)
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:509)
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:103)
+	at freemarker.core.Environment.visit(Environment.java:265)
+	at freemarker.core.MixedContent.accept(MixedContent.java:93)
+	at freemarker.core.Environment.visit(Environment.java:265)
+	at freemarker.core.Environment.process(Environment.java:243)
+	at freemarker.template.Template.process(Template.java:277)
+	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:145)
+	... 25 more
+
+2016-08-08 03:34:27
+[WARN]-[Thread: Timer-5]-[com.mchange.v2.async.ThreadPoolAsynchronousRunner$DeadlockDetector.run()]: com.mchange.v2.async.ThreadPoolAsynchronousRunner$DeadlockDetector@80ee65 -- APPARENT DEADLOCK!!! Creating emergency threads for unassigned pending tasks!
+
+2016-08-08 03:34:27
+[WARN]-[Thread: Timer-5]-[com.mchange.v2.async.ThreadPoolAsynchronousRunner$DeadlockDetector.run()]: com.mchange.v2.async.ThreadPoolAsynchronousRunner$DeadlockDetector@80ee65 -- APPARENT DEADLOCK!!! Complete Status: 
+	Managed Threads: 3
+	Active Threads: 3
+	Active Tasks: 
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@14600f (com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@1ae8f64 (com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@148267d (com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2)
+	Pending Tasks: 
+		com.mchange.v2.resourcepool.BasicResourcePool$1DestroyResourceTask@1d70969
+		com.mchange.v2.resourcepool.BasicResourcePool$1DestroyResourceTask@ab0afd
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@15e72a4
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@1b8a307
+		com.mchange.v2.resourcepool.BasicResourcePool$1DestroyResourceTask@d73d25
+		com.mchange.v2.resourcepool.BasicResourcePool$1DestroyResourceTask@ef6651
+		com.mchange.v2.resourcepool.BasicResourcePool$1DestroyResourceTask@126546c
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@1708d67
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@5385ba
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@170b306
+		com.mchange.v2.resourcepool.BasicResourcePool$1DestroyResourceTask@1f982f1
+		com.mchange.v2.resourcepool.BasicResourcePool$1DestroyResourceTask@3c228
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@bfde76
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@a6331c
+Pool thread stack traces:
+	Thread[com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1,5,main]
+		java.net.DualStackPlainSocketImpl.connect0(Native Method)
+		java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:69)
+		java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:337)
+		java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:198)
+		java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:180)
+		java.net.PlainSocketImpl.connect(PlainSocketImpl.java:157)
+		java.net.SocksSocketImpl.connect(SocksSocketImpl.java:391)
+		java.net.Socket.connect(Socket.java:579)
+		java.net.Socket.connect(Socket.java:528)
+		java.net.Socket.<init>(Socket.java:425)
+		java.net.Socket.<init>(Socket.java:241)
+		com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:257)
+		com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:298)
+		com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2391)
+		com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2428)
+		com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2213)
+		com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:797)
+		com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+		sun.reflect.GeneratedConstructorAccessor50.newInstance(Unknown Source)
+		sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+		java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+		com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+		com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:389)
+		com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:305)
+		com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:134)
+		com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182)
+		com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171)
+		com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137)
+		com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014)
+		com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810)
+		com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+	Thread[com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0,5,main]
+		java.net.SocketInputStream.socketRead0(Native Method)
+		java.net.SocketInputStream.read(SocketInputStream.java:150)
+		java.net.SocketInputStream.read(SocketInputStream.java:121)
+		com.mysql.jdbc.util.ReadAheadInputStream.fill(ReadAheadInputStream.java:114)
+		com.mysql.jdbc.util.ReadAheadInputStream.readFromUnderlyingStreamIfNecessary(ReadAheadInputStream.java:161)
+		com.mysql.jdbc.util.ReadAheadInputStream.read(ReadAheadInputStream.java:189)
+		com.mysql.jdbc.MysqlIO.readFully(MysqlIO.java:3036)
+		com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3489)
+		com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3478)
+		com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4019)
+		com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:951)
+		com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1717)
+		com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1276)
+		com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2395)
+		com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2428)
+		com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2213)
+		com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:797)
+		com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+		sun.reflect.GeneratedConstructorAccessor50.newInstance(Unknown Source)
+		sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+		java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+		com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+		com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:389)
+		com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:305)
+		com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:134)
+		com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182)
+		com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171)
+		com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137)
+		com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014)
+		com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810)
+		com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+	Thread[com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2,5,main]
+		java.net.SocketInputStream.socketRead0(Native Method)
+		java.net.SocketInputStream.read(SocketInputStream.java:150)
+		java.net.SocketInputStream.read(SocketInputStream.java:121)
+		com.mysql.jdbc.util.ReadAheadInputStream.fill(ReadAheadInputStream.java:114)
+		com.mysql.jdbc.util.ReadAheadInputStream.readFromUnderlyingStreamIfNecessary(ReadAheadInputStream.java:161)
+		com.mysql.jdbc.util.ReadAheadInputStream.read(ReadAheadInputStream.java:189)
+		com.mysql.jdbc.MysqlIO.readFully(MysqlIO.java:3036)
+		com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3489)
+		com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3478)
+		com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4019)
+		com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2490)
+		com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2651)
+		com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2677)
+		com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2627)
+		com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1556)
+		com.mysql.jdbc.ConnectionImpl.loadServerVariables(ConnectionImpl.java:3909)
+		com.mysql.jdbc.ConnectionImpl.initializePropsFromServer(ConnectionImpl.java:3443)
+		com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2443)
+		com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2213)
+		com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:797)
+		com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+		sun.reflect.GeneratedConstructorAccessor50.newInstance(Unknown Source)
+		sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+		java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+		com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+		com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:389)
+		com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:305)
+		com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:134)
+		com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182)
+		com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171)
+		com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137)
+		com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014)
+		com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810)
+		com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+
+

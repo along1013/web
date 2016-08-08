@@ -1,6 +1,8 @@
 package com.demo.common.config;
 
+import com.blzg.back.LoginBackController;
 import com.blzg.back.UserController;
+import com.blzg.front.FrontController;
 import com.demo.blog.BlogController;
 import com.demo.common.model._MappingKit;
 import com.demo.index.IndexController;
@@ -35,7 +37,12 @@ public class WebConfig extends JFinalConfig {
 	public void configRoute(Routes me) {
 		me.add("/checkState", IndexController.class);	// 第三个参数为该Controller的视图存放路径
 		me.add("/blog", BlogController.class);			// 第三个参数省略时默认与第一个参数值相同，在此即为 "/blog"
-		me.add("/user",UserController.class);
+		//后台相关
+		me.add("/user_back",UserController.class,"/back");
+		me.add("/login_back",LoginBackController.class,"/back");
+		
+		//前台网站相关
+		me.add("/front",FrontController.class,"/front");
 	}
 	
 	public static C3p0Plugin createC3p0Plugin() {
