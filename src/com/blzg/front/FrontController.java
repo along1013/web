@@ -1,5 +1,6 @@
 package com.blzg.front;
 
+import com.blzg.sms.SMSRedisService;
 import com.jfinal.core.Controller;
 
 /**
@@ -49,5 +50,7 @@ public class FrontController extends Controller{
 		render("/index/agree.html");
 	}
 	
-	
+	public void sendCode(String phone){
+		new SMSRedisService().setRedisSMS(phone);
+	}
 }

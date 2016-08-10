@@ -3,6 +3,7 @@ package com.demo.common.config;
 import com.blzg.back.LoginBackController;
 import com.blzg.back.UserController;
 import com.blzg.front.FrontController;
+import com.blzg.sms.SMSRedisService;
 import com.demo.blog.BlogController;
 import com.demo.common.model._MappingKit;
 import com.demo.index.IndexController;
@@ -16,6 +17,7 @@ import com.jfinal.core.JFinal;
 import com.jfinal.kit.PropKit;
 import com.jfinal.plugin.activerecord.ActiveRecordPlugin;
 import com.jfinal.plugin.c3p0.C3p0Plugin;
+import com.jfinal.plugin.redis.RedisPlugin;
 
 /**
  * API引导式配置
@@ -63,6 +65,9 @@ public class WebConfig extends JFinalConfig {
 		
 		// 所有配置在 MappingKit 中搞定
 		_MappingKit.mapping(arp);
+		
+		RedisPlugin smsRedis = new RedisPlugin("sms", "127.0.0.1");
+		me.add(smsRedis);
 	}
 	
 	/**

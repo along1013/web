@@ -29,7 +29,6 @@ public class TaskTest {
 //		stpe.schedule(task, 6, TimeUnit.SECONDS);
 	}
 
-	@PostConstruct
 	public void init(){
 		
 	}
