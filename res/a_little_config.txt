@@ -1,9 +1,14 @@
-jdbcUrl = jdbc:mysql://121.43.58.238/wechat?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull
-user = yaoyunlong
-password = 873c9534cd7b2c44fa
+#jdbcUrl = jdbc:mysql://121.43.58.238/wechat?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull
+#user = yaoyunlong
+#password = 873c9534cd7b2c44fa
+
+jdbcUrl = jdbc:mysql://127.0.0.1/wechat?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull
+user = root
+#password = UPHXtDL8MWPo
+password = 123
 devMode = true
 
 
 ###back set ########
 userName = bailu
-passWord = bailu123
+passWord = 1qaz2wsx
