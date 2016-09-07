@@ -12,10 +12,10 @@
     <title>Dashboard Template for Bootstrap</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="../back/css/dashboard.css" rel="stylesheet">
+    <link href="css/dashboard.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -91,7 +91,7 @@
 			  <ul class="pagination">
 			    <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
 			    <#list 1..userList.getTotalPage() as t>
-			    	<li><a href="../user_back?pageNo=${t}">${t}</a></li>
+			    	<li><a href="getUserList?pageNo=${t}">${t}</a></li>
 			    </#list>
 			    <li class="disabled"><a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
 			  </ul>
@@ -103,8 +103,8 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="../back/js/jQuery.js"></script>
-    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
   </body>
   <script>
   	
