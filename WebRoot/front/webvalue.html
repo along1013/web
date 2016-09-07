@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>净值查询</title>
+	<link rel="stylesheet" href="front/bootstrap/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="front/css/index.css" />
+	</head>
+	<body>
+		<div class="container-fluid" style="background-color:#EDF0E3;">
+			<#include "nav.html"/>
+			<div style="background-color:#EDF0E3;margin-top: -160px;text-align: center;">
+				<div style="padding-top: 60px;">
+					<p style="font-size: 28px;font-weight: 700;">净值查询</p>
+					<img src="front/webimg/line2.png" />
+				</div>
+				<div style="width: 1200px;position: relative;display: inline-block;">
+					<div style="margin-top: 40px;width:400px;">
+						<p style="font-size: 27px;font-weight: 500;">白鹭产品每周净值(20160825)</p>
+						<ul style="margin-top: 40px;line-height: 30px;text-align:left;">
+							<li>白鹭资管私募产品每周最后一个交易日公布净值</li>
+							<li>净值为公布日前一交易日净值</li>
+							<li>囊萤、嘉庚三期的产品净值曲线图将在建仓八周后呈现</li>
+						</ul>
+					</div>
+					<div style="position: relative;top:-180px;margin-left: 600px;">
+						<table class="table value-table" style="width: 600px;">
+						<tr>
+							<th>产品名称</th>
+							<th>最新净值</th>
+							<th>本周盈亏</th>
+							<th>年化收益</th>
+							<th>建仓起始时间</th>
+						</tr>
+						
+						</table>
+						<div style="margin-left:40%px;">
+							<img src="front/webimg/left.png" id="leftValue" />
+							<img src="front/webimg/right.png" id="rightValue" />
+						</div>
+					</div>
+				</div>
+				<!--
+                	作者：1205801248@qq.com
+                	时间：2016-08-14
+                	描述：6个div排列
+                -->
+				<div style="height: 365px;margin-top:-130px;position: relative;display: inline-block;z-index: 99;" class="img-web">
+					<div class="value-div">
+						<img src="front/webimg/value-1.png" class="value-img"/>
+						<p class="p-title">白鹭一期</p>
+						<p class="value-p">白鹭一期于2015年12月18日建仓，对应上证指数为3579点，运行期间上证指数最大下跌至2638点，跌幅达26.29%。该产品最低净值为0.991，本周最新净值为1.309</p>
+					</div>
+					<div class="value-div" style="margin-left: 100px;">
+						<img src="front/webimg/value-2.png" class="value-img"/>
+						<p class="p-title">白鹭二期</p>
+						<p class="value-p">白鹭二期于2016年1月12日建仓，对应上证指数为3023点，运行期间上证指数最大下跌至2638点，跌幅达12.74%。该产品最低净值为0.971，最终净值为1.086,已于2016年6月8日清算</p>
+					</div>
+					<div class="value-div" style="margin-left: 100px;">
+						<img src="front/webimg/value-3.png" class="value-img"/>
+						<p class="p-title">嘉庚一期</p>
+						<p class="value-p">嘉庚一期于2016年4月27日建仓，该产品最低净值为0.994，本周最新净值为1.005</p>
+					</div>
+				</div>
+				<div style="height: 365px;display: inline-block;position: relative;margin-top:100px;z-index: 99;" class="img-web">
+					<div class="value-div">
+						<img src="front/webimg/value-4.png" class="value-img"/>
+						<p class="p-title">嘉庚四期</p>
+						<p class="value-p">嘉庚四期于2016年5月9日建仓，该产品最低净值为0.995，本周最新净值为1.065</p>
+					</div>
+					<div class="value-div" style="margin-left: 100px;">
+						<img src="front/webimg/value-5.png" class="value-img"/>
+						<p class="p-title">勤业</p>
+						<p class="value-p">白鹭勤业于2016年5月27日建仓，该产品最低净值为0.983，本周最新净值为1.019</p>
+					</div>
+					<div class="value-div" style="margin-left: 100px;">
+						<img src="front/webimg/value-6.png" class="value-img"/>
+						<p class="p-title">映雪</p>
+						<p class="value-p">白鹭映雪于2016年6月2日建仓，该产品最低净值为0.993，本周最新净值为1.014</p>
+					</div>
+				</div>
+				<div style="height: 365px;display: inline-block;position: relative;margin-top:100px;z-index: 99;" class="img-web">
+					<div class="value-div">
+						<img src="front/webimg/value-7.png" class="value-img"/>
+						<p class="p-title">嘉庚二期</p>
+						<p class="value-p">嘉庚二期于2016年6月15日建仓，该产品最低净值为1.004，本周最新净值为1.048</p>
+					</div>
+					<div class="value-div" style="margin-left: 100px;">
+						
+					</div>
+					<div class="value-div" style="margin-left: 100px;">
+					
+					</div>
+				</div>				
+			</div>
+		</div>
+		<img src="front/webimg/value_footer.png" class="img-responsive imgfooter" alt="footer"/>
+		<#include "modal.html" />		
+	</body>
+	<script src="front/js/jquery-1.12.4.min.js"></script>
+	<script src="front/bootstrap/js/bootstrap.min.js"></script>
+	<script src="front/js/jquery.qrcode.min.js"></script>
+	<script src="front/js/index.js"></script>
+	<script src="front/js/value.js"></script>
+	<style>
+		.value-div{
+			width: 330px;
+			height:300px;
+			float: left;
+		}
+		.value-img{
+			width: 330px;
+			height: 260px;
+			box-shadow:1px 1px 30px #aaaaaa;
+		}
+		.value-p{
+			text-align: left;
+			padding:10px;
+		}
+		.p-title{
+			text-align: left;
+			padding-left: 10px;
+			margin-top:10px;
+			font-weight: 600;
+			color: #404040;
+			font-size: 18px;
+		}
+	</style>
+</html>

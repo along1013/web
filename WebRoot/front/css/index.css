@@ -1,0 +1,92 @@
+body,button, input, select, textarea,h1 ,h2, h3, h4, h5, h6,p { font-family: Microsoft YaHei,'宋体' , Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;}
+.container-fluid{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.nav-web{
+	background: rgba(255, 255, 255,0.3);
+	border-radius: 2px;
+	height: 70px;
+	position: absolute;
+	top: 50px;
+	left: 20%;
+	right: 25%;
+	z-index: 9999;
+}
+.nav-web p{
+	text-align: center;
+	position: relative;
+	color:#000000;
+	font-size: 16px;
+}
+.hoverdiv{
+	width: 130px;
+	height: 70px;
+	padding: 25px;
+	position: relative;
+	left: 66%;
+	top:-58px;
+	cursor:pointer
+}
+.aboutdiv{
+	height: 70px;
+	padding: 25px;
+	position: relative;
+	cursor:pointer;
+	background: rgba(255, 255, 255,0.3);
+}
+.about-all{
+	width: 130px;
+	position: relative;
+	left: 312px;
+	top:-140px;
+}
+.nav-logo-text{
+	text-align: center;
+	position: relative;
+	top: -250px;
+}
+.home-title{
+	height: 450px;
+	width: 100%;
+}
+.img-web img{
+	border-radius: 2px;
+}
+.imgfooter{
+	position: absolute;
+	margin-top: -450px;
+}
+
+.value-table tr{
+        height: 30px;
+        border-bottom: #DEDDC6 solid 1px;;
+}
+.value-table th{
+        font-family: "微软雅黑";
+        font-size: 13px;
+        color: #FFE5B0;
+}
+.value-table tr >td{
+        font-family: "微软雅黑";
+        color: #7C5608;
+}
+.value-table tr td:nth-child(1){
+        font-family: "微软雅黑";
+        font-size: 13px;
+        font-weight: bold;
+        color: #7C5608;
+}
+.value-table tr:nth-child(1){
+        background-color: #7C5608;
+}
+.value-table tr:nth-child(2n+2){
+        background-color: #C3AA76;
+        background-color:rgba(195,170,118,0.5);
+}
+.value-table tr:nth-child(2n+3){
+        background-color: #C3AA76;
+        background-color:rgba(195,170,118,0.8);
+}
+

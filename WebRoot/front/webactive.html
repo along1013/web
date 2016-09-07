@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>企业活动</title>
+	<link rel="stylesheet" href="front/bootstrap/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="front/css/index.css" />
+	<link rel="stylesheet" href="front/css/baguetteBox.min.css" />
+	</head>
+	<body>
+		<div class="container-fluid" style="background-color:#EDF0E3;text-align: center;">
+			<#include "nav.html"/>
+			<div style="background-color:#EDF0E3;margin-top: -160px;text-align: center;">
+				<div style="padding-top: 60px;">
+					<p style="font-size: 28px;font-weight: 700;">企业活动</p>
+					<img src="front/webimg/line2.png" />
+				</div>
+			</div>
+			<div style="height: 360px;margin-top: 40px;position: relative;z-index: 999;display: inline-block;" class="img-web" id="imghover">
+				<div class="active-div baguetteBox">
+					<a href="front/webimg/huodongmax11.png"><img src="front/webimg/huodong1.png" class="img-active"/></a>
+					<p class="p-title">K歌比赛</p>
+					<p class="p-content">每位白鹭交易员都完成了与专业月底合作的初体验</p>
+					<a href="front/webimg/huodongmax12.png"></a>
+					<a href="front/webimg/huodongmax13.png"></a>
+				</div>
+				<div class="active-div baguetteBox" style="margin-left: 30px;">
+					<a href="front/webimg/huodongmax21.png"><img src="front/webimg/huodong2.png" class="img-active"/></a>
+					<p class="p-title">养生瑜伽</p>
+					<p class="p-content">瑜伽的体验让大家懂得了养生的重要性</p>
+					<a href="front/webimg/huodongmax22.png"></a>
+					<a href="front/webimg/huodongmax23.png"></a>
+				</div>
+				<div class="active-div baguetteBox" style="margin-left: 30px;">
+					<a href="front/webimg/huodongmax31.png"><img src="front/webimg/huodong3.png" class="img-active"/></a>
+					<p class="p-title">舞蹈活动</p>
+					<p class="p-content">白鹭定期组织大家跳舞，让交易员身心得到彻底的放松</p>
+					<a href="front/webimg/huodongmax32.png"></a>
+					<a href="front/webimg/huodongmax33.png"></a>
+				</div>
+			</div>
+			<div style="height: 360px;display: inline-block;margin-top: 50px;position: relative;z-index: 999;" class="img-web" id="imghover2">
+				<div class="active-div baguetteBox">
+					<a href="front/webimg/huodongmax41.png"><img src="front/webimg/huodong4.png" class="img-active"/></a>
+					<p class="p-title">80分大赛</p>
+					<p class="p-content">白鹭不定期举办80分及德州扑克等棋牌活动，锻炼交易员的主动思考和小组协作能力</p>
+					<a href="front/webimg/huodongmax42.png"></a>
+					<a href="front/webimg/huodongmax43.png"></a>
+					<a href="front/webimg/huodongmax44.png"></a>
+					<a href="front/webimg/huodongmax45.png"></a>
+				</div>
+				<div class="active-div baguetteBox" style="margin-left: 30px;">
+					<a href="front/webimg/huodongmax51.png"><img src="front/webimg/huodong5.png" class="img-active"/></a>
+					<p class="p-title">九溪户外行</p>
+					<p class="p-content">九溪户外行</p>
+					<a href="front/webimg/huodongmax52.png"></a>
+					<a href="front/webimg/huodongmax53.png"></a>
+					<a href="front/webimg/huodongmax54.png"></a>
+					<a href="front/webimg/huodongmax55.png"></a>
+					<a href="front/webimg/huodongmax56.png"></a>
+					<a href="front/webimg/huodongmax57.png"></a>
+					<a href="front/webimg/huodongmax58.png"></a>
+					<a href="front/webimg/huodongmax59.png"></a>
+				</div>
+				<div class="active-div baguetteBox" style="margin-left: 30px;">
+					<a href="front/webimg/huodongmax61.png"><img src="front/webimg/huodong6.png" class="img-active"/></a>
+					<p class="p-title">足球企业联赛</p>
+					<p class="p-content">每位白鹭交易员都完成了与专业月底合作的初体验</p>
+					<a href="front/webimg/huodongmax62.png"></a>
+					<a href="front/webimg/huodongmax63.png"></a>
+					<a href="front/webimg/huodongmax64.png"></a>
+					<a href="front/webimg/huodongmax65.png"></a>
+					<a href="front/webimg/huodongmax66.png"></a>
+					<a href="front/webimg/huodongmax67.png"></a>
+					<a href="front/webimg/huodongmax68.png"></a>
+				</div>
+			</div>
+		</div>
+		<img src="front/webimg/value_footer.png" class="img-responsive imgfooter" alt="footer"/>
+		<#include "modal.html" />
+	</body>
+	<script src="front/js/jquery-1.12.4.min.js"></script>
+	<script src="front/js/baguetteBox.min.js"></script>
+	<script src="front/bootstrap/js/bootstrap.min.js"></script>
+	<script src="front/js/jquery.qrcode.min.js"></script>
+	<script src="front/js/index.js"></script>
+	<script>
+	$(function(){
+        baguetteBox.run('.baguetteBox');
+    });
+	$("#imghover").on('mouseover', "img", function(event) {
+        $(this).css("box-shadow","1px 1px 30px #aaaaaa");
+    }).on('mouseout', "img", function(event) {
+        $(this).css("box-shadow","");
+    });
+	$("#imghover2").on('mouseover', "img", function(event) {
+        $(this).css("box-shadow","1px 1px 30px #aaaaaa");
+    }).on('mouseout', "img", function(event) {
+        $(this).css("box-shadow","");
+    });
+	</script>
+	<style>
+		.active-div{
+			float: left;
+			max-width: 380px;
+		}
+		.img-active{
+			height: 296px;
+			width: 380px;
+		}
+		.p-title{
+			margin-top:10px;
+			font-weight: 600;
+			color: #404040;
+			font-size: 18px;
+		}
+	</style>
+</html>
