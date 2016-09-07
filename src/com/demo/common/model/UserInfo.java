@@ -19,6 +19,14 @@ public class UserInfo extends BaseUserInfo<UserInfo> {
 	public Page<UserInfo> paginate(int pageNumber, int pageSize) {
 		return paginate(pageNumber, pageSize, "select *", "from user_info order by id asc");
 	}
+	
+	public boolean isExistPhone(String phone){
+		UserInfo info = me.findFirst("select * from user_info where phone = '"+phone+"'");
+		if(info!=null && phone.equals(info.getPhone())){
+			return true;
+		}
+		return false;
+	}
 }
 
 

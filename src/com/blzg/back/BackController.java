@@ -1,9 +1,10 @@
 package com.blzg.back;
 
+import com.demo.common.model.UserInfo;
 import com.jfinal.core.Controller;
 import com.jfinal.kit.PropKit;
 
-public class LoginBackController extends Controller{
+public class BackController extends Controller{
 
 	/**
 	 * 后台登录主页面
@@ -28,5 +29,11 @@ public class LoginBackController extends Controller{
 			return;
 		}
 		render("index.html");
+	}
+	
+	public void getUserList(){
+		setAttr("userList", UserInfo.me.paginate(getParaToInt("pageNo", 1), 10));
+		System.out.println(getAttr("userList"));
+		render("userList.html");		
 	}
 }
